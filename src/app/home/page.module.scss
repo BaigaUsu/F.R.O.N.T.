@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  grid-template-columns: auto 1fr; // Adjust 250px to your preferred sidebar width
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "A B B"
+    "A C C"
+    "D E F";
+//   height: 100vh; // Ensures full height of the viewport
+  width: 100%;
+}
+
+.sidebar {
+  grid-area: A;
+  height: 100%;
+//   Add any additional styles for the sidebar
+}
+
+.sphere {
+  grid-area: B;
+//   Add styles for the sphere, e.g. centering
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+}
+
+.mainUp {
+  grid-area: C;
+//   Add any additional styles for the main content
+}
+
+.bottomLeft {
+  grid-area: D;
+  width: 20%;
+}
+
+.mainDown {
+  grid-area: E;
+  width: 80%;
+}
+
+.bottomRight {
+  grid-area: F;
+  width: 20%;
+}

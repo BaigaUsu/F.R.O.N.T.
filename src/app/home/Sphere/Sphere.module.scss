@@ -1,0 +1,15 @@
+.block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sphere {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px solid blue;
+
+}
